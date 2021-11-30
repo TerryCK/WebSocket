@@ -11,7 +11,8 @@ import Combine
 
 class HomeViewModel: ObservableObject {
     private let webSocketTask: URLSessionWebSocketTask
-    
+    // The API Token can generator from
+    //    https://finnhub.io/dashboard
     init(_ session: URLSession = .shared,
          url: URL = URL(string: "wss://ws.finnhub.io?token=APItoken")!) {
         webSocketTask = session
